@@ -13,7 +13,7 @@ import base64
 nltk.download('punkt')
 
 # Load the model and tokenizer
-checkpoint = "/workspaces/blank-app-3/LaMini-Flan-T5-248M"
+checkpoint = "LaMini-Flan-T5-248M"
 tokenizer = T5Tokenizer.from_pretrained(checkpoint)
 base_model = T5ForConditionalGeneration.from_pretrained(checkpoint, device_map='auto', torch_dtype=torch.float32)
 
