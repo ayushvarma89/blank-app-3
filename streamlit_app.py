@@ -13,7 +13,9 @@ import os
 
 # Download necessary NLTK resources
 nltk.download('punkt')
-
+nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
 path = os.path.dirname(os.path.realpath(__file__))
 
 # Load the model and tokenizer
